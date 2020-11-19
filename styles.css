@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x:hidden;
+}
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left:0;
+    background-color: #111;
+    color: #ccc;
+    overflow-x: hidden;
+    transition: 0.7s;
+    padding-top: 2rem;
+
+}
+
+.nav .slide a, h1,p{
+    display:block;
+    margin-top: 20px;
+    padding: 3rem 3rem;
+    text-decoration: none;
+    color:#ccc;
+}
+
+.nav .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding : 20px;
+}
+
+#content {
+    padding : 20px;
+    transition : margin-left 0.7s;
+    overflow: hidden;
+}
+

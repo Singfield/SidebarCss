@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-a11y="true"></script>
+    <title>Responsive side bar in Html css </title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function openSlideMenu() {
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('content').style.marginLeft = '250px';
+        }
+        function closeSlideMenu() {
+            document.getElementById('menu').style.width = '0px';
+            document.getElementById('content').style.marginLeft = '0px';
+        }
+    </script>
+</head>
+
+<body>
+    <div id="content">
+        <span  class="slide">
+            <a href="#" onclick="openSlideMenu()">
+                <i class="fas fa-bars"></i>
+            </a>
+        </span>
+
+        <div id="menu"  class="nav">
+
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+            <h1> Description </h1>
+            <p> Ceci est la description de votre element</p>
+        </div>
+    </div>
+</body>
+
+</html>
